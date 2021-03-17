@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		312A1E832601F9240089E5B1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A1E822601F9240089E5B1 /* ListView.swift */; };
+		312A1EAD260237120089E5B1 /* JobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A1EAC260237120089E5B1 /* JobQueue.swift */; };
+		312A1EB1260237390089E5B1 /* JobSheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A1EB0260237390089E5B1 /* JobSheduler.swift */; };
+		312A1EB5260239EA0089E5B1 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A1EB4260239EA0089E5B1 /* Feed.swift */; };
 		31B8E4CC2600EC67004D4964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E4CB2600EC67004D4964 /* AppDelegate.swift */; };
 		31B8E4CE2600EC67004D4964 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E4CD2600EC67004D4964 /* SceneDelegate.swift */; };
 		31B8E4D02600EC67004D4964 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E4CF2600EC67004D4964 /* ContentView.swift */; };
@@ -54,6 +57,9 @@
 
 /* Begin PBXFileReference section */
 		312A1E822601F9240089E5B1 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		312A1EAC260237120089E5B1 /* JobQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobQueue.swift; sourceTree = "<group>"; };
+		312A1EB0260237390089E5B1 /* JobSheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSheduler.swift; sourceTree = "<group>"; };
+		312A1EB4260239EA0089E5B1 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		31B8E4C82600EC66004D4964 /* SuffixExtensionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuffixExtensionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B8E4CB2600EC67004D4964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B8E4CD2600EC67004D4964 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312A1EAB260237000089E5B1 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				312A1EAC260237120089E5B1 /* JobQueue.swift */,
+				312A1EB0260237390089E5B1 /* JobSheduler.swift */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
 		31B8E4BF2600EC66004D4964 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +133,7 @@
 		31B8E4CA2600EC66004D4964 /* SuffixExtensionApp */ = {
 			isa = PBXGroup;
 			children = (
+				312A1EAB260237000089E5B1 /* Job */,
 				31B8E5192600FEE9004D4964 /* Views */,
 				31B8E5002600F972004D4964 /* Model */,
 				31B8E4FB2600F8E5004D4964 /* Extenstion */,
@@ -195,6 +211,7 @@
 				31B8E51E2600FF62004D4964 /* Suffix3LetterView.swift */,
 				31B8E5222600FF70004D4964 /* Suffix5LetterView.swift */,
 				312A1E822601F9240089E5B1 /* ListView.swift */,
+				312A1EB4260239EA0089E5B1 /* Feed.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,13 +322,16 @@
 				31B8E5162600FC43004D4964 /* ViewModel.swift in Sources */,
 				31B8E50E2600FA0C004D4964 /* SuffixSequence.swift in Sources */,
 				31B8E5232600FF70004D4964 /* Suffix5LetterView.swift in Sources */,
+				312A1EAD260237120089E5B1 /* JobQueue.swift in Sources */,
 				31B8E4CC2600EC67004D4964 /* AppDelegate.swift in Sources */,
 				31B8E50A2600F9F2004D4964 /* Suffix.swift in Sources */,
 				31B8E5032600F98F004D4964 /* Helper.swift in Sources */,
+				312A1EB5260239EA0089E5B1 /* Feed.swift in Sources */,
 				31B8E5122600FA29004D4964 /* SuffixInterator.swift in Sources */,
 				31B8E4CE2600EC67004D4964 /* SceneDelegate.swift in Sources */,
 				31B8E4D02600EC67004D4964 /* ContentView.swift in Sources */,
 				31B8E51B2600FF15004D4964 /* SuffixView.swift in Sources */,
+				312A1EB1260237390089E5B1 /* JobSheduler.swift in Sources */,
 				31B8E51F2600FF62004D4964 /* Suffix3LetterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

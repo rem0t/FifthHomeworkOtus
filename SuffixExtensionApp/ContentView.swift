@@ -12,7 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var model: ViewModel
     
     @State private var selection = 0
-    var rubrics = ["All suffix", "Top 10 \"3 let\"", "Top 10 \"5 let\""]
+    var rubrics = ["All suffix", "Top 10 \"3 let\"", "Top 10 \"5 let\"", "Feed"]
 
     var body: some View {
         VStack {
@@ -28,6 +28,8 @@ struct ContentView: View {
                 Top3Suffix()
             } else if selection == 2 {
                 Top5Suffix()
+            } else {
+                Feed(jobScheduler: self.model.jobScheduler, values: self.model.texts)
             }
         }
     }
